@@ -1,0 +1,282 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+}
+main {
+  padding: 30px;
+}
+
+/* === Header and Navigation === */
+header {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header p {
+  margin: 5px 0 15px;
+  font-size: 1rem;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ffda77;
+}
+
+/* === Footer === */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* === Hero Section (Homepage) === */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #1f1c2c;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+}
+.hero-image img.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.hero-image img.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* === Section Headings === */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* === Card Container Shared === */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* === Card Design (3D Effect) === */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.card h3 {
+  margin-top: 0;
+  color: #1f1c2c;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card a {
+  text-decoration: none;
+  color: #4e54c8;
+  font-weight: bold;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+}
+
+/* === About Section === */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.about-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-text {
+  max-width: 500px;
+}
+.about-text h2 {
+  font-size: 2rem;
+  color: #1f1c2c;
+  margin-bottom: 10px;
+}
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.about-image img.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === Skills Section === */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.skill-card {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  font-weight: bold;
+  color: #1f1c2c;
+  transition: all 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #4e54c8;
+  color: white;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.2);
+}
+
+/* === Contact Form === */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.contact-form input[type="submit"] {
+  background-color: #1f1c2c;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #4e54c8;
+}
+
+/* === Admin Login Box === */
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+.login-box h2 {
+  margin-bottom: 20px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.login-box input[type="submit"] {
+  background: #4e54c8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-box input[type="submit"]:hover {
+  background: #333399;
+}
+
+/* === Admin Dashboard === */
+.dashboard {
+  width: 90%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.dashboard h2 {
+  margin-bottom: 10px;
+}
+.dashboard .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  text-decoration: none;
+  background: #4e54c8;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.dashboard .btn:hover {
+  background: #333399;
+}
+.dashboard .logout {
+  background: #f44336;
+}
+.dashboard .logout:hover {
+  background: #c62828;
+}
